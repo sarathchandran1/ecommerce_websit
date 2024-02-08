@@ -1,0 +1,17 @@
+{% extends 'base.html '%}
+
+
+{% block content %}
+{% if messages %}
+
+   {% for message in messages %}
+   <p class ="{{ message.tags }}">{{ message }}...</p><br><br><br><br><br><br><br>
+
+   {% endfor %}
+{% else %}
+
+{% include 'cart_container.html' %}
+
+{% endif %}
+
+{% endblock content %}
